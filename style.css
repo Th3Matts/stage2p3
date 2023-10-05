@@ -1,3 +1,11 @@
+body{
+  margin: 0;
+}
+
+.page{
+  border: 1px solid #89C5CC;
+}
+
 h1{
   font-family: 'Mulish', sans-serif;
   font-weight: normal;
