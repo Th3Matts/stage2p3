@@ -1,26 +1,44 @@
 body{
-  margin: 0;
-  padding: 20px;
   border: 10px solid #01a05e;
+  margin: 0;
 }
 
 .page{
-  padding: 20px;
   border: 10px solid #89C5CC;
+
+  width: 1000px;
+  margin: 65px auto 0;
 }
 
 header{
-  padding: 20px;
   border: 10px solid #c0cc89;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 55px;
+}
+
+nav ul{
+  border: 10px solid #89ccbb;
+
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+
+  margin: 0;
+  padding: 0;
 }
 
 main{
-  padding: 15px;
   border: 10px solid #cc8989;
+
+  display: flex;
 }
 
 footer{
-  padding: 15px;
   border: 10px solid #b189cc;
 }
 
@@ -34,4 +52,10 @@ h1{
 h1 span{
   font-weight: 700;
   color:#89C5CC;
+}
+
+#balls{
+  position: fixed;
+  right: 0;
+  bottom: 0;
 }
