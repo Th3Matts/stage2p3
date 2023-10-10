@@ -32,6 +32,10 @@ ul{
   padding: 0;
 }
 
+ul li a{
+  opacity: 1;
+}
+
 a {
   color: #1F1534;
   text-decoration: none;
