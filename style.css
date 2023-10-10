@@ -1,18 +1,19 @@
 body{
-  border: 10px solid #01a05e;
+  min-height: 100vh;
   margin: 0;
-  text-align: center;
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0.00) 82.08%, rgba(227, 255, 248, 0.38) 100%);
 }
 
 .page{
-  border: 10px solid #89C5CC;
-
   width: 1000px;
-  margin: 65px auto 0;
+  margin: 0 auto;
+  padding-top: 65px;
 }
 
-header{
-  border: 10px solid #c0cc89;
+nav{
+  font-family: 'Mulish', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
 
   display: flex;
   justify-content: space-between;
@@ -21,9 +22,7 @@ header{
   margin-bottom: 55px;
 }
 
-nav ul{
-  border: 10px solid #89ccbb;
-
+ul{
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -33,20 +32,32 @@ nav ul{
   padding: 0;
 }
 
-main{
-  border: 10px solid #cc8989;
+ul li a{
+  opacity: 1;
+}
 
+a {
+  color: #1F1534;
+  text-decoration: none;
+}
+
+a:hover, footer a:hover{
+  font-weight: bold;
+}
+
+main{
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 main h1{
   width: 489px;
-  margin:40px 0;
 }
 
 main p{
   width: 438px;
-  margin:0 0 40px;
+  margin:40px 0 40px;
 
   color: #7D7987;
   font-family: Open Sans;
@@ -56,11 +67,8 @@ main p{
   line-height: 28px;
 }
 
-footer{
-  border: 10px solid #b189cc;
-}
-
 h1{
+  color: #1F1534;
   font-family: 'Mulish', sans-serif;
   font-weight: normal;
   font-size: 49px;
@@ -73,37 +81,43 @@ h1 span{
 }
 
 button{
-  width: 179px;
-  height: 56px;
+  background-color: #69B99D;
+  padding: 14px 32px 15px;
+  border: 0;
+  border-radius: 4px;
   gap: 10px;
   
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background-color: #69B99D;
-
+  
   color: #F9F9F9;
-  font-family: DM sans;
+  font-family: DM sans, sans-serif;
   font-size: 16px;
   font-style: normal;
+}
 
-  border: 0;
-  border-radius: 4px;
+button:hover{
+  background-color: #4caa89;
+  transition: 10ms;
 }
 
 footer{
   width: 592px;
   height: 28px;
   gap: 5px;
-  margin: 0 auto 30px;
+  margin: 80px auto 30px;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
-  position: fixed;
-  bottom: 0;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
 }
 
 #balls{
